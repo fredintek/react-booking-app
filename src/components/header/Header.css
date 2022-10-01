@@ -1,0 +1,172 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.headerContainer {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 102.4rem;
+  padding: 0 2rem;
+  margin: 2rem auto 10rem auto;
+}
+
+.headerContainer.listmode {
+  margin: 2rem auto 0 auto;
+}
+
+.headerList {
+  display: flex;
+  /* border: 1px solid red; */
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.headerDesc {
+  margin: 2.4rem 0;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.headerSearch {
+  height: 3rem;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  max-width: 102.4rem;
+  z-index: 10;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerSearchItem:nth-child(2),
+.headerSearchItem:nth-child(3) {
+  cursor: pointer;
+}
+
+.headerSearchItem:nth-child(2) {
+  position: relative;
+}
+
+.headerSearchItem:nth-child(3) {
+  position: relative;
+}
+
+.dateBox {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  /* display: none; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  opacity: 0;
+  transform: scale(0.3);
+  visibility: hidden;
+  transition: all 400ms ease;
+}
+
+.dateBox.active {
+  /* display: block; */
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.headerSearchInput {
+  border: none;
+  color: black;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.headerSearchInput::placeholder {
+  opacity: 0.5;
+}
+
+.headerSearchText {
+  color: lightgray;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: white;
+  color: #000;
+  position: absolute;
+  top: 4rem;
+  right: -2rem;
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  opacity: 0;
+  transform: scale(0.3);
+  visibility: hidden;
+  transition: all 400ms ease;
+}
+
+.options.active {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.optionsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionsText {
+  font-weight: 400;
+}
+
+.optionsControl {
+  /* border: 1px solid red; */
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 9rem;
+}
+
+.optionCounterNumber {
+  font-size: 1.2rem;
+}
+
+.optionCounterButton {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #0071c2;
+  background-color: #fff;
+}

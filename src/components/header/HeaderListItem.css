@@ -1,0 +1,14 @@
+.headerListItem {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 1rem;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 2rem;
+}
