@@ -1,0 +1,68 @@
+.widget {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 10rem;
+  padding: 1rem;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left {
+    .title {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: gray;
+    }
+
+    .counter {
+      font-size: 2.8rem;
+      font-weight: 300;
+    }
+
+    .link {
+      border-bottom: 1px solid gray;
+      font-size: 1.2rem;
+      width: max-content;
+      cursor: pointer;
+    }
+  }
+  .right {
+    .percentage {
+      display: flex;
+      align-items: center;
+
+      &.positive {
+        color: green;
+      }
+
+      &.negative {
+        color: red;
+      }
+
+      .icon {
+        font-size: 1.4rem !important;
+      }
+    }
+
+    .rightIcon {
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 5px;
+      align-self: flex-end;
+
+      .pIcon {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

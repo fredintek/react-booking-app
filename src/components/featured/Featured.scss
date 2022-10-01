@@ -1,0 +1,61 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 0.35;
+  padding: 1rem;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    .progressBar {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .bTitle {
+      color: rgb(155, 155, 155);
+      font-weight: 600;
+    }
+
+    .bPrice {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    .bText {
+      width: 90%;
+      max-width: 35rem;
+      text-align: center;
+      color: rgb(155, 155, 155);
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+
+    .bOptions {
+      // border: 1px solid red;
+      display: flex;
+      width: 90%;
+      max-width: 40rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(155, 155, 155);
+    font-size: 1.8rem;
+
+    .tIcon {
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tableCell {
+  display: flex;
+  align-items: center;
+
+  .tableCellContent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .cellWrapper {
+      display: inline-block;
+      & > img {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    & > p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: gray;
+    }
+
+    & > span {
+      font-size: 1.6em;
+      font-family: inherit;
+      font-weight: 400;
+    }
+
+    & > .status.Approved {
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    & > .status.Pending {
+      color: goldenrod;
+      background-color: rgba(189, 189, 3, 0.103);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+  }
+}

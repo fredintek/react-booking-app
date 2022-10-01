@@ -1,0 +1,42 @@
+.navbar {
+  border: 0.5px solid rgb(231, 228, 228);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #555;
+  padding: 2.5rem;
+
+  .wrapper {
+    // border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid lightgray;
+      padding: 3px;
+      border-radius: 3px;
+
+      & > input {
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+
+        &::placeholder {
+          font-size: 1.2rem;
+          color: lightgray;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
